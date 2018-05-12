@@ -1,0 +1,87 @@
+Java Coding Problem Set 2
+
+
+// enemy targeting system attacks if it can see player and if the player has no
+// power ups, if player has power ups enemy runs away, if can't see player then
+// just wanders
+
+boolean canSeePlayer;
+boolean playerPoweredUp;
+
+if(canSeePlayer) {
+  if(!playerPoweredUp) {
+    System.out.println("Attack!");
+  } else {
+    System.out.println("Run away!");
+  }
+} else {
+  System.out.println("Wander.");
+}
+
+
+// tells you to stay home if it is either raining or snowing or bellow 50
+// degrees fahrenheit and tells you to go out if other wise
+
+boolean isSnowing;
+boolean isRaining;
+double temperature;
+
+if(isSnowing !! isRaining !! (temperature < 50.0)){
+  System.out.println("Let's stay home.");
+} else {
+  System.out.println("Let's go out!");
+}
+
+
+// tells you whether its morning daytime or night
+
+int time;
+string timeOfDay
+if (time >= 5 && time < 12) {
+  timeOfDay = "morning";
+} else if (time >= 12 && time < 20) {
+  timeOfDay = "daytime";
+} else {
+  timeOfDay = "night";
+}
+System.out.println(timeOfDay)
+
+
+// tells you to sleep in if its a weekend or holiday and to get up at 7 if not
+
+int weekday;
+boolean holiday;
+
+if (weekday >= 1 && weekday <= 5 && !holiday) {
+  System.out.println("Wake up at 7:00");
+} else {
+  System.out.println("Sleep in!");
+}
+
+
+// tells your schedule based on what day of the week it is
+
+int dayOfWeek;
+string schedule;
+
+switch (dayOfWeek) {
+  case 1:
+    schedule = "Gym in the morning.";
+    break;
+  case 2:
+    schedule = "Class after work.";
+    break;
+  case 3:
+    schedule = "Meetings all day.";
+    break;
+  case 4:
+    schedule = "Work from home.";
+    break;
+  case 5:
+    schedule = "Game night after work."
+    break;
+  default:
+    schedule = "Free!";
+    break;
+}
+System.out.println(schedule)
